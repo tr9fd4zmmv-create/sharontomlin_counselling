@@ -192,8 +192,8 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
     text-align: center;
     padding-block: clamp(5.5rem, 11vw, 9rem);
     background:
-        radial-gradient(ellipse 70% 55% at 50% -5%, var(--green-50) 0%, transparent 62%),
-        linear-gradient(180deg, var(--white) 0%, var(--warm-bg) 100%);
+        radial-gradient(ellipse 70% 55% at 50% -5%, var(--green-100) 0%, transparent 62%),
+        linear-gradient(180deg, var(--green-100) 0%, #cfe4d9 100%);
 }
 
 /* soft floating decoration */
@@ -213,6 +213,16 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
     top: 50%; left: 50%; transform: translate(-50%, -50%);
     border: 1px solid rgba(61,122,95,.08);
 }
+
+/* subtle water-ripple rings */
+.hero-ripple {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    z-index: 0; pointer-events: none;
+    color: var(--green-700);
+    opacity: .05;
+}
+@media (max-width: 640px) { .hero-ripple { opacity: .04; } }
 
 .hero-inner {
     position: relative; z-index: 1;
@@ -574,6 +584,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
                 <a href="about.html" class="nav-link">About</a>
                 <a href="counselling.html" class="nav-link">Counselling with Me</a>
                 <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
                 <div class="nav-cta">
                     <a href="contact.html" class="btn btn--dark btn--sm">Get in touch</a>
                 </div>
@@ -592,6 +603,26 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
     <span class="hero-orb hero-orb--ring" aria-hidden="true"></span>
     <span class="hero-orb hero-orb--1" aria-hidden="true"></span>
     <span class="hero-orb hero-orb--2" aria-hidden="true"></span>
+
+    <svg class="hero-ripple" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.4">
+            <circle cx="810" cy="230" r="34"/>
+            <circle cx="810" cy="230" r="80"/>
+            <circle cx="810" cy="230" r="132"/>
+            <circle cx="810" cy="230" r="190"/>
+            <circle cx="810" cy="230" r="254"/>
+            <circle cx="810" cy="230" r="324"/>
+            <circle cx="810" cy="230" r="400"/>
+            <circle cx="810" cy="230" r="482"/>
+            <circle cx="230" cy="486" r="28"/>
+            <circle cx="230" cy="486" r="66"/>
+            <circle cx="230" cy="486" r="110"/>
+            <circle cx="230" cy="486" r="160"/>
+            <circle cx="230" cy="486" r="216"/>
+            <circle cx="230" cy="486" r="278"/>
+            <circle cx="230" cy="486" r="346"/>
+        </g>
+    </svg>
 
     <div class="wrap hero-inner">
         <h1>You don't have to<br>carry it alone</h1>
@@ -925,7 +956,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
                 </a>
                 <p>BACP-accredited counsellor and psychotherapist serving Reigate, Dorking, Redhill, Leatherhead and the wider Surrey area.</p>
                 <div style="margin-top:1.75rem; display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
-                    <img src="images/bacp-logo.png" alt="BACP accredited member" style="height:60px; width:auto; display:block;">
+                    <a href="https://www.bacp.co.uk/therapists/385076/sharon-tomlin/" target="_blank" rel="noopener"><img src="images/bacp-logo.png" alt="Verify Sharon Tomlin's BACP membership" style="height:60px; width:auto; display:block;"></a>
                     <a href="https://www.counselling-directory.org.uk/counsellors/sharon-tomlin" target="_blank" rel="noopener"><img src="images/counselling_directory.jpeg" alt="Counselling Directory member" style="height:60px; width:auto; display:block; border-radius:6px;"></a>
                 </div>
             </div>
@@ -944,7 +975,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem); }
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Sharon Tomlin Counselling. Accredited with BACP.</p>
+            <p>&copy; 2026 Sharon Tomlin Counselling. Accredited with BACP.</p>
         </div>
     </div>
 </footer>
