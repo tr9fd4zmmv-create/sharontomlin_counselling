@@ -210,12 +210,12 @@ h3 { font-size: 1.1rem; }
 .qual-title { font-size: .9rem; font-weight: 600; color: var(--text-900); display: block; }
 .qual-detail { font-size: .8rem; color: var(--text-500); display: block; margin-top: 2px; }
 
-.training-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-top: 1.5rem; }
+.training-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-top: 1.5rem; }
 .training-chip {
-    display: flex; align-items: center; gap: .6rem;
-    padding: .7rem 1rem;
+    display: flex; align-items: center; justify-content: flex-start; gap: .5rem;
+    padding: .5rem 1rem; text-align: left;
     background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--r-lg); font-size: .83rem; font-weight: 500; color: var(--text-700);
+    border-radius: var(--r-full); font-size: .78rem; font-weight: 500; color: var(--text-700);
 }
 .training-chip svg { flex-shrink: 0; color: var(--green-500); }
 
@@ -270,9 +270,9 @@ h3 { font-size: 1.1rem; }
     .about-grid { grid-template-columns: 1fr; }
     .about-sidebar { position: static; }
     .about-photo-placeholder { aspect-ratio: 16/9; }
-    .training-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
+    .training-grid { grid-template-columns: repeat(2, 1fr); }
     .hamburger { display: flex; }
     .primary-nav .nav-link, .nav-cta { display: none; }
     .primary-nav.open .nav-link, .primary-nav.open .nav-cta { display: block; }
@@ -306,6 +306,7 @@ h3 { font-size: 1.1rem; }
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="counselling.html" class="nav-link">Counselling with Me</a>
                 <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
                 <div class="nav-cta">
                     <a href="contact.html" class="btn btn--dark btn--sm">Get in touch</a>
                 </div>
@@ -450,7 +451,7 @@ h3 { font-size: 1.1rem; }
                 </a>
                 <p>BACP-accredited counsellor and psychotherapist serving Reigate, Dorking, Redhill, Leatherhead and the wider Surrey area.</p>
                 <div style="margin-top:1.75rem; display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
-                    <img src="images/bacp-logo.png" alt="BACP accredited member" style="height:60px; width:auto; display:block;">
+                    <a href="https://www.bacp.co.uk/therapists/385076/sharon-tomlin/" target="_blank" rel="noopener"><img src="images/bacp-logo.png" alt="Verify Sharon Tomlin's BACP membership" style="height:60px; width:auto; display:block;"></a>
                     <a href="https://www.counselling-directory.org.uk/counsellors/sharon-tomlin" target="_blank" rel="noopener"><img src="images/counselling_directory.jpeg" alt="Counselling Directory member" style="height:60px; width:auto; display:block; border-radius:6px;"></a>
                 </div>
             </div>
@@ -469,7 +470,7 @@ h3 { font-size: 1.1rem; }
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Sharon Tomlin Counselling. Accredited with BACP.</p>
+            <p>&copy; 2026 Sharon Tomlin Counselling. Accredited with BACP.</p>
         </div>
     </div>
 </footer>

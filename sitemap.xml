@@ -20,4 +20,12 @@
     <loc>https://sharontomlin.com/contact.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://sharontomlin.com/blog.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sharontomlin.com/blog-is-therapy-for-you.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
